@@ -30,7 +30,8 @@ include $(DEVKITPRO)/libnx/switch_rules
 #     - icon.jpg
 #     - <libnx folder>/default_icon.jpg
 #---------------------------------------------------------------------------------
-TARGET		:=	$(notdir $(CURDIR))
+#TARGET		:=	$(notdir $(CURDIR)) or
+TARGET		:=	game-example
 BUILD		:=	build
 SOURCES		:=	source
 DATA		:=	data
@@ -38,7 +39,7 @@ INCLUDES	:=	include
 EXEFS_SRC	:=	exefs_src
 APP_TITLE   :=  game-example
 APP_AUTHOR  :=  Dontwait
-APP_VERSION :=  0.7.3
+APP_VERSION :=  0.8.0
 #ROMFS	:=	romfs
 
 #---------------------------------------------------------------------------------
