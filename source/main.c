@@ -32,6 +32,30 @@ int main(int argc, char **argv)
         int wall15_y, wall15_x;
         int wall16_y, wall16_x;
         int wall17_y, wall17_x;
+        int wall18_y, wall18_x;
+        int wall19_y, wall19_x;
+        int wall20_y, wall20_x;
+        int wall21_y, wall21_x;
+        int wall22_y, wall22_x;
+        int wall23_y, wall23_x;
+        int wall24_y, wall24_x;
+        int wall25_y, wall25_x;
+        int wall26_y, wall26_x;
+        int wall27_y, wall27_x;
+        int wall28_y, wall28_x;
+        int wall29_y, wall29_x;
+        int wall30_y, wall30_x;
+        int wall31_y, wall31_x;
+        int wall32_y, wall32_x;
+        int wall33_y, wall33_x;
+        int wall34_y, wall34_x;
+        int wall35_y, wall35_x;
+        int wall36_y, wall36_x;
+        int wall37_y, wall37_x;
+        int wall38_y, wall38_x;
+        int wall39_y, wall39_x;
+        int wall40_y, wall40_x;
+        
         
     srand(time(NULL));
     
@@ -61,6 +85,29 @@ int main(int argc, char **argv)
     wall15_y = 6;
     wall16_y = 6;
     wall17_y = 6;
+    wall18_y = 6;
+    wall19_y = 6;
+    wall20_y = 6;
+    wall21_y = 6;
+    wall22_y = 6;
+    wall23_y = 6;
+    wall24_y = 6;
+    wall25_y = 6;
+    wall26_y = 6;
+    wall27_y = 6;
+    wall28_y = 6;
+    wall29_y = 6;
+    wall30_y = 6;
+    wall31_y = 6;
+    wall32_y = 6;
+    wall33_y = 6;
+    wall34_y = 6;
+    wall35_y = 6;
+    wall36_y = 6;
+    wall37_y = 6;
+    wall38_y = 6;
+    wall39_y = 6;
+    wall40_y = 6;
     
     wall_x = 1;
     wall1_x = 2;
@@ -80,7 +127,29 @@ int main(int argc, char **argv)
     wall15_x = 16;
     wall16_x = 17;
     wall17_x = 18;
-    
+    wall18_x = 19;
+    wall19_x = 20;
+    wall20_x = 21;
+    wall21_x = 22;
+    wall22_x = 23;
+    wall23_x = 24;
+    wall24_x = 25;
+    wall25_x = 26;
+    wall26_x = 27;
+    wall27_x = 28;
+    wall28_x = 29;
+    wall29_x = 30;
+    wall30_x = 31;
+    wall31_x = 32;
+    wall32_x = 33;
+    wall33_x = 34;
+    wall34_x = 35;
+    wall35_x = 36;
+    wall36_x = 37;
+    wall37_x = 38;
+    wall38_x = 39;
+    wall39_x = 40;
+    wall40_x = 41;
     
     printf("\x1b[3;70H%d;%d", player_y, player_x);
     printf("\x1b[%d;%dHl", player_y, player_x);
@@ -102,7 +171,29 @@ int main(int argc, char **argv)
     printf("\x1b[%d;%dHX", wall15_y, wall15_x);
     printf("\x1b[%d;%dHX", wall16_y, wall16_x);
     printf("\x1b[%d;%dHX", wall17_y, wall17_x);
-    
+    printf("\x1b[%d;%dHX", wall18_y, wall18_x);
+    printf("\x1b[%d;%dHX", wall19_y, wall19_x);
+    printf("\x1b[%d;%dHX", wall20_y, wall20_x);
+    printf("\x1b[%d;%dHX", wall21_y, wall21_x);
+    printf("\x1b[%d;%dHX", wall22_y, wall22_x);
+    printf("\x1b[%d;%dHX", wall23_y, wall23_x);
+    printf("\x1b[%d;%dHX", wall24_y, wall24_x);
+    printf("\x1b[%d;%dHX", wall25_y, wall25_x);
+    printf("\x1b[%d;%dHX", wall26_y, wall26_x);
+    printf("\x1b[%d;%dHX", wall27_y, wall27_x);
+    printf("\x1b[%d;%dHX", wall28_y, wall28_x);
+    printf("\x1b[%d;%dHX", wall29_y, wall29_x);
+    printf("\x1b[%d;%dHX", wall30_y, wall30_x);
+    printf("\x1b[%d;%dHX", wall31_y, wall31_x);
+    printf("\x1b[%d;%dHX", wall32_y, wall32_x);
+    printf("\x1b[%d;%dHX", wall33_y, wall33_x);
+    printf("\x1b[%d;%dHX", wall34_y, wall34_x);
+    printf("\x1b[%d;%dHX", wall35_y, wall35_x);
+    printf("\x1b[%d;%dHX", wall36_y, wall36_x);
+    printf("\x1b[%d;%dHX", wall37_y, wall37_x);
+    printf("\x1b[%d;%dHX", wall38_y, wall38_x);
+    printf("\x1b[%d;%dHX", wall39_y, wall39_x);
+    printf("\x1b[%d;%dHX", wall40_y, wall40_x);
     
     while(appletMainLoop())
     {
@@ -110,7 +201,7 @@ int main(int argc, char **argv)
 
         u64 kDown = hidKeysDown(CONTROLLER_P1_AUTO);
         
-        printf("\x1b[3;70H %d ; %d ", player_y, player_x);
+        printf("\x1b[3;70H%d;%d ", player_y, player_x);
         
         if (kDown & KEY_DUP) {
                   printf("\x1b[%d;%dH ", player_y, player_x);
@@ -706,9 +797,706 @@ int main(int argc, char **argv)
                       printf("\x1b[%d;%dHX", wall17_y, wall17_x);
                        }
                       }
+                      
+                      if (kDown & KEY_DUP) {
+        if (player_y == wall_y && player_x == wall_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall_y, wall_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall_y && player_x == wall_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall_y, wall_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall_y && player_x == wall_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall_y, wall_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall_y && player_x == wall_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall_y, wall_x);
+                       }
+                      }
+//______________________________________________________________________wall 18
+if (kDown & KEY_DUP) {
+        if (player_y == wall18_y && player_x == wall18_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall18_y, wall18_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall18_y && player_x == wall18_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall18_y, wall18_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall18_y && player_x == wall18_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall18_y, wall18_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall18_y && player_x == wall18_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall18_y, wall18_x);
+                       }
+                      }
+//______________________________________________________________________wall 19
+if (kDown & KEY_DUP) {
+        if (player_y == wall19_y && player_x == wall19_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall19_y, wall19_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall19_y && player_x == wall19_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall19_y, wall19_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall19_y && player_x == wall19_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall19_y, wall19_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall19_y && player_x == wall19_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall19_y, wall19_x);
+                       }
+                      }
+//______________________________________________________________________wall 20
+if (kDown & KEY_DUP) {
+        if (player_y == wall20_y && player_x == wall20_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall20_y, wall20_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall20_y && player_x == wall20_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall20_y, wall20_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall20_y && player_x == wall20_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall20_y, wall20_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall20_y && player_x == wall20_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall20_y, wall20_x);
+                       }
+                      }
+//______________________________________________________________________wall 21
+if (kDown & KEY_DUP) {
+        if (player_y == wall21_y && player_x == wall21_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall21_y, wall21_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall21_y && player_x == wall21_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall21_y, wall21_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall21_y && player_x == wall21_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall21_y, wall21_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall21_y && player_x == wall21_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall21_y, wall21_x);
+                       }
+                      }
+//______________________________________________________________________wall 22
+if (kDown & KEY_DUP) {
+        if (player_y == wall22_y && player_x == wall22_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall22_y, wall22_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall22_y && player_x == wall22_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall22_y, wall22_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall22_y && player_x == wall22_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall22_y, wall22_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall22_y && player_x == wall22_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall22_y, wall22_x);
+                       }
+                      }
+//______________________________________________________________________wall 23
+if (kDown & KEY_DUP) {
+        if (player_y == wall23_y && player_x == wall23_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall23_y, wall23_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall23_y && player_x == wall23_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall23_y, wall23_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall23_y && player_x == wall23_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall23_y, wall23_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall23_y && player_x == wall23_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall23_y, wall23_x);
+                       }
+                      }
+//______________________________________________________________________wall 24
+if (kDown & KEY_DUP) {
+        if (player_y == wall24_y && player_x == wall24_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall24_y, wall24_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall24_y && player_x == wall24_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall24_y, wall24_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall24_y && player_x == wall24_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall24_y, wall24_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall24_y && player_x == wall24_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall24_y, wall24_x);
+                       }
+                      }
+//______________________________________________________________________wall 25
+if (kDown & KEY_DUP) {
+        if (player_y == wall25_y && player_x == wall25_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall25_y, wall25_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall25_y && player_x == wall25_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall25_y, wall25_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall25_y && player_x == wall25_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall25_y, wall25_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall25_y && player_x == wall25_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall25_y, wall25_x);
+                       }
+                      }
+//______________________________________________________________________wall 26
+if (kDown & KEY_DUP) {
+        if (player_y == wall26_y && player_x == wall26_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall26_y, wall26_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall26_y && player_x == wall26_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall26_y, wall26_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall26_y && player_x == wall26_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall26_y, wall26_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall26_y && player_x == wall26_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall26_y, wall26_x);
+                       }
+                      }
+//______________________________________________________________________wall 27
+if (kDown & KEY_DUP) {
+        if (player_y == wall27_y && player_x == wall27_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall27_y, wall27_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall27_y && player_x == wall27_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall27_y, wall27_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall27_y && player_x == wall27_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall27_y, wall27_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall27_y && player_x == wall27_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall27_y, wall27_x);
+                       }
+                      }
+//______________________________________________________________________wall 28
+if (kDown & KEY_DUP) {
+        if (player_y == wall28_y && player_x == wall28_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall28_y, wall28_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall28_y && player_x == wall28_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall28_y, wall28_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall28_y && player_x == wall28_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall28_y, wall28_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall28_y && player_x == wall28_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall28_y, wall28_x);
+                       }
+                      }
+//______________________________________________________________________wall 29
+if (kDown & KEY_DUP) {
+        if (player_y == wall29_y && player_x == wall29_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall29_y, wall29_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall29_y && player_x == wall29_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall29_y, wall29_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall29_y && player_x == wall29_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall29_y, wall29_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall29_y && player_x == wall29_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall29_y, wall29_x);
+                       }
+                      }
+//______________________________________________________________________wall 30
+if (kDown & KEY_DUP) {
+        if (player_y == wall30_y && player_x == wall30_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall30_y, wall30_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall30_y && player_x == wall30_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall30_y, wall30_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall30_y && player_x == wall30_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall30_y, wall30_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall30_y && player_x == wall30_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall30_y, wall30_x);
+                       }
+                      }
+//______________________________________________________________________wall 31
+if (kDown & KEY_DUP) {
+        if (player_y == wall31_y && player_x == wall31_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall31_y, wall31_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall31_y && player_x == wall31_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall31_y, wall31_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall31_y && player_x == wall31_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall31_y, wall31_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall31_y && player_x == wall31_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall31_y, wall31_x);
+                       }
+                      }
+//______________________________________________________________________wall 32
+if (kDown & KEY_DUP) {
+        if (player_y == wall32_y && player_x == wall32_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall32_y, wall32_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall32_y && player_x == wall32_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall32_y, wall32_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall32_y && player_x == wall32_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall32_y, wall32_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall32_y && player_x == wall32_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall32_y, wall32_x);
+                       }
+                      }
+//______________________________________________________________________wall 33
+if (kDown & KEY_DUP) {
+        if (player_y == wall33_y && player_x == wall33_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall33_y, wall33_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall33_y && player_x == wall33_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall33_y, wall33_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall_y && player_x == wall_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall33_y, wall33_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall33_y && player_x == wall33_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall33_y, wall33_x);
+                       }
+                      }
+//______________________________________________________________________wall 34
+if (kDown & KEY_DUP) {
+        if (player_y == wall34_y && player_x == wall34_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall34_y, wall34_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall34_y && player_x == wall34_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall34_y, wall34_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall34_y && player_x == wall34_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall34_y, wall34_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall34_y && player_x == wall34_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall34_y, wall34_x);
+                       }
+                      }
+//______________________________________________________________________wall 35
+if (kDown & KEY_DUP) {
+        if (player_y == wall35_y && player_x == wall35_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall35_y, wall35_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall35_y && player_x == wall35_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall35_y, wall35_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall35_y && player_x == wall35_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall35_y, wall35_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall35_y && player_x == wall35_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall35_y, wall35_x);
+                       }
+                      }
+//______________________________________________________________________wall 36
+if (kDown & KEY_DUP) {
+        if (player_y == wall36_y && player_x == wall36_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall36_y, wall36_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall36_y && player_x == wall36_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall36_y, wall36_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall36_y && player_x == wall36_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall36_y, wall36_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall36_y && player_x == wall36_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall36_y, wall36_x);
+                       }
+                      }
+//______________________________________________________________________wall 37
+if (kDown & KEY_DUP) {
+        if (player_y == wall37_y && player_x == wall37_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall37_y, wall37_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall37_y && player_x == wall37_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall37_y, wall37_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall37_y && player_x == wall37_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall37_y, wall37_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall37_y && player_x == wall37_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall37_y, wall37_x);
+                       }
+                      }
+//______________________________________________________________________wall 38
+if (kDown & KEY_DUP) {
+        if (player_y == wall38_y && player_x == wall38_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall38_y, wall38_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall38_y && player_x == wall38_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall38_y, wall38_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall38_y && player_x == wall38_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall38_y, wall38_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall38_y && player_x == wall38_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall38_y, wall38_x);
+                       }
+                      }
+//______________________________________________________________________wall 39
+if (kDown & KEY_DUP) {
+        if (player_y == wall39_y && player_x == wall39_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall39_y, wall39_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall39_y && player_x == wall39_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall39_y, wall39_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall39_y && player_x == wall39_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall39_y, wall39_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall39_y && player_x == wall39_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall39_y, wall39_x);
+                       }
+                      }
+//______________________________________________________________________wall 40
+if (kDown & KEY_DUP) {
+        if (player_y == wall40_y && player_x == wall40_x){
+                      player_y = player_y + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall40_y, wall40_x);
+                       }
+                      }
+        if (kDown & KEY_DDOWN) {
+        if (player_y == wall40_y && player_x == wall40_x) {
+                      player_y = player_y - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall40_y, wall40_x);
+                       }
+                      }
+        if (kDown & KEY_DLEFT) {
+        if (player_y == wall40_y && player_x == wall40_x) {
+                      player_x = player_x + 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall40_y, wall40_x);
+                       }
+                      }
+        if (kDown & KEY_DRIGHT) {
+        if (player_y == wall40_y && player_x == wall40_x) {
+                      player_x = player_x - 1;
+                      printf("\x1b[%d;%dHl", player_y, player_x);
+                      printf("\x1b[%d;%dHX", wall40_y, wall40_x);
+                       }
+                      }
+//______________________________________________________________________wall juj
+       
         gfxFlushBuffers();
         gfxSwapBuffers();
-        gfxWaitForVsync();
     }
 
     gfxExit();
