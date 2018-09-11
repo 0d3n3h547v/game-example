@@ -38,7 +38,7 @@ INCLUDES	:=	include
 EXEFS_SRC	:=	exefs_src
 APP_TITLE   :=  game-example
 APP_AUTHOR  :=  Dontwait
-APP_VERSION :=  0.7.2
+APP_VERSION :=  0.7.3
 #ROMFS	:=	romfs
 
 #---------------------------------------------------------------------------------
